@@ -1,0 +1,35 @@
+use m4data
+
+
+db.createCollection("users")
+ 
+
+
+db.createCollection("awards")
+
+
+db.createCollection("userawards")
+
+
+
+
+db.awards.insertMany([ { UserID: 801129947, connectionID:"AWA01",connectionName:"Best_Actor", connectiontopic:"Awards", details:"Sanju is a 2018 Indian semi biographical film directed by Rajkumar Hirani and written by Hirani and Abhijat Joshi. ... Ranbir Kapoor stars as Dutt, along with an ensemble cast which features Paresh Rawal, Vicky Kaushal, Manisha Koirala, Dia Mirza, Sonam Kapoor, Anushka Sharma and Jim Sarbh.", releasedateTime:"June 29th,2018 3.00pm", location:"Film was shot in Newyork", imageurl:"../assets/images/sanjupic.jpg"},
+ { UserID: 801129947, connectionID:"AWA02", connectionName:"Best_Director", connectiontopic:"Awards", details:"The Raazi Movie was Directed by Meghana Gulzar.revolves around the life of an Indian spy Sehmat, played by Alia Bhatt who is married to a Pakistani officer. The critically acclaimed spy thriller is reportedly based on a true story. The film is mainly an adaptation of Harinder Sikkas 2008 novel titled Calling Sehmat",  releasedateTime:"May 10th,2018 5.00pm",  location:"Film was shot in Pakisthan", imageurl:"../assets/images/Raazi.jpg"},
+ { UserID: 801129947, connectionID:"AWA03", connectionName:"Best_Film", connectiontopic:"Awards", details:"The film stars Tabu, Ayushmann Khurrana, and Radhika Apte, and tells the story of a blind piano player who unwittingly becomes embroiled in the murder of a former film actor.", releasedateTime:"October 1st,2018 9.00pm", location:"Film was shot in India", imageurl:"../assets/images/andhadhun.jpeg"},
+ { UserID: 801129947,connectionID:"NOM01", connectionName:"Best_Actress", connectiontopic:"Nominations", details:"Padmaavat is a 2018 Indian Hindi-language epic period drama film directed by Sanjay Leela Bhansali. Loosely based on the epic poem Padmavat by Malik Muhammad Jayasi, it stars Deepika Padukone as Rani Padmavati, a Rajput queen known for her beauty, wife of Maharawal Ratan Singh, played by Shahid Kapoor.", releasedateTime:"January 25th,2018 8.00pm", location:"Film was shot in Sanjay Leela Bhansalis Indianised epic set", imageurl:"../assets/images/padmaavat.jpg" },
+ { UserID: 801129947,connectionID:"NOM02", connectionName:"Best_singer", connectiontopic:"Nominations", details:" Stree is a 2018 Indian comedy horror film directed by Amar Kaushik, written by Raj Nidimoru and Krishna D.K. and produced by Dinesh Vijan and Raj Nidimoru and Krishna D.K. Stree stars Rajkummar Rao and Shraddha Kapoor.", releasedateTime:"August 30th,2018 11.00pm", location:"Film was shot in India", imageurl:"../assets/images/stree.jpg"},
+ { UserID: 801129947, connectionID:"NOM03", connectionName:"Best_supporting_actor", connectiontopic:"Nominations", details: " Hichki presents a positive and inspiring story about a woman who turns her biggest weakness into her biggest strength. Hichki is a story about a woman who turns her most daunting weakness into her biggest strength. Naina Mathur (Rani Mukerji) is an aspiring teacher who suffers from Tourette Syndrome", releasedateTime:"March 23rd,2018 10.00pm", location:"Film was shot in India and part of it in United States",imageurl:"../assets/images/hichki.jpg"}]);
+
+
+
+
+
+
+  Adding a user to user collection :
+
+
+
+
+ db.users.insertMany([{UserID:123, password:"smir123",  firstName: "Smirthi", lastName: "Meenakshisundaram", username: "smeenak1@uncc.edu", address1Field: "University Terrace Drive Apt H", address2Field: "9547 unit",city: "North Carolina",state: "Charlotte", zipcode: 28262, country: "United States" },
+{UserID:456, password:"shannah123",  firstName: "Sharon", lastName: "Hannah", username: "shannah@uncc.edu", address1Field: "University Terrace Drive Apt A", address2Field: "9588 unit",city: "North Carolina",state: "Charlotte", zipcode: 28262, country: "United States" }]);
+
